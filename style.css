@@ -2,7 +2,48 @@
     position: relative;
     background-color: rgba(203, 130, 212, 0.979);
     padding-top: 10em;
+
+    /* aca */
+    transition: 0.5s ease-in-out;
 }
+
+/* aca */
+input[type="checkbox"] {
+    margin-left: 7em;
+    position: relative;
+    width: 40px;
+    height: 20px;
+    background-color: salmon;
+    appearance: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+input[type="checkbox"]:checked {
+    background-color: #434343;
+}
+input[type="checkbox"]::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: rgb(38, 84, 184);
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: 0.7s ease;
+}
+input[type="checkbox"]:checked::before {
+    transform: translateX(20px);
+    background-color: #f2f2f2;
+}
+.dark-mode {
+    background-color: #252525;
+    color: #f2f2f2;
+
+}
+
 
 .pedir {
     color: #20a859;
